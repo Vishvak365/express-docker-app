@@ -1,3 +1,2 @@
-# Express App with Docker
-
-Hyperminimal setup of an Express app with Docker. :) 
+# Docker app CI/CD to Digital Ocean Docker image with SSH
+## Look at .gitlab/workflows to see how the docker image is pushed to digital ocean
