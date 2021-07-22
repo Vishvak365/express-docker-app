@@ -20,4 +20,11 @@ jobs:
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
-        script: whoami
+        script: |
+          cd ~
+          cd express-docker-app
+          git pull
+          docker build -t node-app .
+          docker stop yeet
+          docker rm yeet
+          docker run --name yeet --env-file .env -p 80:8080 -d node-app
