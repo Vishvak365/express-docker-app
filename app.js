@@ -6,4 +6,7 @@ app.get('/', async (req, res, next) => {
 app.get('/test', async (req, res, next) => {
   res.status(200).send('Test endpoint')
 })
+app.get('/anothertest', async (req, res, next) => {
+  res.status(200).send('Test endpoint')
+})
 app.listen(3000, () => console.log('Server is running on port 3000'))
