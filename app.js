@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 app.get('/', async (req, res, next) => {
-  res.status(200).send('Hello World!')
+  res.status(200).send('Hello World! Docker Update')
 })
 app.get('/test', async (req, res, next) => {
   res.status(200).send('Test endpoint')
